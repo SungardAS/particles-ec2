@@ -1,1 +1,1 @@
-{"us-west-1":{"ami":"ami-aaebbaef"},"eu-west-1":{"ami":"ami-807540f4"},"us-east-1":{"ami":"ami-38c33651"},"ap-southeast-1":{"ami":"ami-d8225c8a"}}
+{"ap-southeast-1":{"ami":"ami-d8225c8a"},"eu-west-1":{"ami":"ami-807540f4"},"us-west-1":{"ami":"ami-aaebbaef"},"us-east-1":{"ami":"ami-38c33651"}}

@@ -1,1 +1,1 @@
-{"us-west-2":{"ami":"ari-eee26fde"},"us-west-1":{"ami":"ari-ff0657ba"},"sa-east-1":{"ami":"ari-de3ce3c3"},"eu-west-1":{"ami":"ari-fc94a588"},"ap-northeast-1":{"ami":"ari-de0da6df"},"us-east-1":{"ami":"ari-fe916297"},"ap-southeast-1":{"ami":"ari-e484fab6"}}
+{"sa-east-1":{"ami":"ari-de3ce3c3"},"ap-southeast-1":{"ami":"ari-e484fab6"},"us-west-2":{"ami":"ari-eee26fde"},"ap-northeast-1":{"ami":"ari-de0da6df"},"eu-west-1":{"ami":"ari-fc94a588"},"us-west-1":{"ami":"ari-ff0657ba"},"us-east-1":{"ami":"ari-fe916297"}}
