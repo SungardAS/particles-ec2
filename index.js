@@ -2,7 +2,8 @@ var _ = require('lodash'),
 async = require('async'),
 AWS = require('aws-sdk'),
 fs = require('fs-extra'),
-path = require('path');
+path = require('path'),
+stringify = require('json-stable-stringify');
 
 var fetchImages = require('./lib/fetch-images');
 
@@ -27,7 +28,7 @@ f.on('end', function() {
       console.log(name);
       fs.outputFile(
         path.join('particles','partials','amazon-image-regions',name),
-        JSON.stringify(imageMap[name]),
+        stringify(imageMap[name]),
         cb
       );
     },
