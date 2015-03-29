@@ -26,7 +26,7 @@ f.on('end', function() {
     function(name,cb) {
       console.log(name);
       fs.outputFile(
-        path.join('particles','partials','image-regions',name),
+        path.join('particles','partials','amazon-image-regions',name),
         JSON.stringify(imageMap[name]),
         cb
       );

@@ -11,4 +11,5 @@ ec2 resources.
 ## TODO
 * Create a gulpfile with reusable gulp tasks
 * Handlebars helpers
+* Helper with live lookup
 
