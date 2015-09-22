@@ -1,0 +1,14 @@
+---
+cfn_signal_path: /opt/aws/bin/cfn-signal
+---
+
+"# Helper function\n",
+"function error_exit\n",
+"{\n",
+"  {{cfn_signal_path}} -e 1 --stack ", { "Ref": "AWS::StackName" },
+"  --resource {{resource}} ",
+"  --region ", { "Ref" : "AWS::Region" },
+"  -r \"$1\" ",
+"\n",
+"  exit 1\n",
+"}\n"
