@@ -1,13 +1,17 @@
 {
   "name": "particles-ec2",
-  "version": "0.2.6",
-  "description": "",
+  "version": "0.2.7",
+  "description": "[Condensation](https://github.com/SungardAS/condensation) particles for AWS::EC2::* resource types",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Kevin McGrath",
+    "email": "kevin.mcgrath@sungardas.com"
+  },
   "license": "Apache 2.0",
+  "keywords": ["condensation-particles"],
   "devDependencies": {
     "fs-extra": "^0.16.5"
   },
