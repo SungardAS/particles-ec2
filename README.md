@@ -20,43 +20,43 @@ Instance AvailabilityZone
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 ### instance\_id
-Instance AvailabilityZone
+Instance ID
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 ### instance\_private\_dns
-Instance AvailabilityZone
+Instance Private DNS
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 ### instance\_private\_ip
-Instance AvailabilityZone
+Instance Private IP
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 ### instance\_public\_dns
-Instance AvailabilityZone
+Instance Public DNS
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 ### instance\_public\_ip
-Instance AvailabilityZone
+Instance Public IP
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 ### security\_group\_id
-Instance AvailabilityZone
+SecurityGroup ID
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 ### security\_group\_name
-Instance AvailabilityZone
+SecurityGroup Name
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
