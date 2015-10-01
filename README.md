@@ -53,13 +53,13 @@ Instance Public IP
 SecurityGroup ID
 
 *Parameters*
-  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+  `securityGroupLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 ### security\_group\_name
 SecurityGroup Name
 
 *Parameters*
-  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+  `securityGroupLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
 
 ## sets
