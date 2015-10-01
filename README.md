@@ -3,6 +3,80 @@
 [Condensation](https://github.com/kmcgrath/condensation) particles for
 ec2 resources.
 
+[![logo](https://raw.githubusercontent.com/SungardAS/condensation/master/docs/images/condensation_logo.png)](https://github.com/SungardAS/condensation)
+
+[![NPM](https://nodei.co/npm/particles-ec2.png)](https://nodei.co/npm/particles-ec2/)
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SungardAS/condensation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Dependency
+Status](https://david-dm.org/SungardAS/particles-ec2.svg?branch=master)](https://david-dm.org/SungardAS/particles-ec2?branch=master)
+
+## outputs
+
+### instance\_availability\_zone
+Instance AvailabilityZone
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+### instance\_id
+Instance AvailabilityZone
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+### instance\_private\_dns
+Instance AvailabilityZone
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+### instance\_private\_ip
+Instance AvailabilityZone
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+### instance\_public\_dns
+Instance AvailabilityZone
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+### instance\_public\_ip
+Instance AvailabilityZone
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+### security\_group\_id
+Instance AvailabilityZone
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+### security\_group\_name
+Instance AvailabilityZone
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+
+## sets
+
+### instance\_output\_all
+Create all available instance outputs
+
+*Parameters*
+  `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
+
+
+### security\_group\_output\_all
+Create all available security group outputs
+
+*Parameters*
+  `securityGroupLogicalId {String}` logicalId of the AWS::EC2::SecurityGroup resource
+
 ## partials
 
 ### amazon-image-regions
@@ -16,9 +90,4 @@ is a json map of AWS regions to AMI IDs.
 At this time neither Handlebars or Condensation support async helpers.
 Until then this project will pre-process AMIs owned by Amazon and commit
 them to the partials directory here.
-
-## TODO
-* Create a gulpfile with reusable gulp tasks
-* Helper with live lookup (depends on Handlebars or Condensation async
-  support)
 

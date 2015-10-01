@@ -1,20 +1,20 @@
 {
   "name": "particles-ec2",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache 2.0",
   "devDependencies": {
     "fs-extra": "^0.16.5"
   },
   "dependencies": {
-    "async": "^1.2.0",
-    "aws-sdk": "^2.1.17",
+    "async": "^1.4.2",
+    "aws-sdk": "^2.2.5",
     "json-stable-stringify": "^1.0.0",
-    "lodash": "^3.5.0"
+    "lodash": "^3.10.0"
   }
 }
