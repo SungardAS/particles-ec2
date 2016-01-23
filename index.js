@@ -33,8 +33,10 @@ f.on('end', function() {
       );
     },
     function(err) {
-      console.warn(err);
+      console.log("particles-ec2: Finished loading images");
 
+      if (err)
+        console.warn(err);
     }
   );
 });
