@@ -1,6 +1,6 @@
 {
   "name": "particles-ec2",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "[Condensation](https://github.com/SungardAS/condensation) particles for AWS::EC2::* resource types",
   "main": "index.js",
   "scripts": {
