@@ -1,9 +1,9 @@
 ---
-listeners: "[]"
+listeners: []
 ---
 {{#resource "m:core" "base" type="AWS::ElasticLoadBalancing::LoadBalancer"}}
 "Properties": {
-  "Listeners": {{listeners}}
+  "Listeners": {{helper "m:core" "propertyValue" listeners}}
   {{#if accessLoggingPolicy}},"AccessLoggingPolicy": {{accessLoggingPolicy}}{{/if}}
   {{#if appCookieStickinessPolicy}},"AppCookieStickinessPolicy": {{appCookieStickinessPolicy}}{{/if}}
   {{#if availabilityZones}},"AvailabilityZones": {{availabilityZones}}{{/if}}
