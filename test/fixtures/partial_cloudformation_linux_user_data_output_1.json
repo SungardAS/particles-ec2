@@ -1,0 +1,52 @@
+{
+  "Fn::Base64": {
+    "Fn::Join": [
+      "",
+      [
+        "#!/bin/bash -ex\n",
+        "# Helper function\n",
+        "function error_exit\n",
+        "{\n",
+          "  /opt/aws/bin/cfn-signal -e 1 -r \"$1\" ",
+          "  --stack ",
+          {
+            "Ref": "AWS::StackName"
+          },
+          "  --resource Resource1 ",
+          "  --region ",
+          {
+            "Ref": "AWS::Region"
+          },
+          "\n",
+          "  exit 1\n",
+          "}\n",
+          "# Process CloudFormation init definitions\n",
+          "/opt/aws/bin/cfn-init -s ",
+          {
+            "Ref": "AWS::StackName"
+          },
+          " -r Resource2 ",
+          " -c default ",
+          "    --region ",
+          {
+            "Ref": "AWS::Region"
+          },
+          " || error_exit 'Failed to run cfn-init'\n",
+          "# All is well so signal success\n",
+          "/opt/aws/bin/cfn-signal -e 0 -r \"Stack setup complete\" ",
+          "  --stack ",
+          {
+            "Ref": "AWS::StackName"
+          },
+          "  --resource Resource1 ",
+          "  --region ",
+          {
+            "Ref": "AWS::Region"
+          },
+          "\n",
+          "#EOF"
+      ]
+    ]
+  }
+}
+

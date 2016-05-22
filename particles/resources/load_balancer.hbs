@@ -4,20 +4,20 @@ listeners: []
 {{#resource "m:core" "base" type="AWS::ElasticLoadBalancing::LoadBalancer"}}
 "Properties": {
   "Listeners": {{helper "m:core" "propertyValue" listeners}}
-  {{#if accessLoggingPolicy}},"AccessLoggingPolicy": {{accessLoggingPolicy}}{{/if}}
-  {{#if appCookieStickinessPolicy}},"AppCookieStickinessPolicy": {{appCookieStickinessPolicy}}{{/if}}
-  {{#if availabilityZones}},"AvailabilityZones": {{availabilityZones}}{{/if}}
-  {{#if connectionDrainingPolicy}},"ConnectionDrainingPolicy": {{connectionDrainingPolicy}}{{/if}}
-  {{#if connectionSettings}},"ConnectionSettings": {{connectionSettings}}{{/if}}
+  {{#if accessLoggingPolicy}},"AccessLoggingPolicy": {{helper "m:core" "propertyValue" accessLoggingPolicy}}{{/if}}
+  {{#if appCookieStickinessPolicy}},"AppCookieStickinessPolicy": {{helper "m:core" "propertyValue" appCookieStickinessPolicy}}{{/if}}
+  {{#if availabilityZones}},"AvailabilityZones": {{helper "m:core" "propertyValue" availabilityZones}}{{/if}}
+  {{#if connectionDrainingPolicy}},"ConnectionDrainingPolicy": {{helper "m:core" "propertyValue" connectionDrainingPolicy}}{{/if}}
+  {{#if connectionSettings}},"ConnectionSettings": {{helper "m:core" "propertyValue" connectionSettings}}{{/if}}
   {{#if crossZone}},"CrossZone": {{helper "m:core" "propertyValue" crossZone}}{{/if}}
-  {{#if healthCheck}},"HealthCheck": {{healthCheck}}{{/if}}
-  {{#if instances}},"Instances": {{instances}}{{/if}}
-  {{#if lbCookieStickinessPolicy}},"LBCookieStickinessPolicy": {{lbCookieStickinessPolicy}}{{/if}}
+  {{#if healthCheck}},"HealthCheck": {{helper "m:core" "propertyValue" healthCheck}}{{/if}}
+  {{#if instances}},"Instances": {{helper "m:core" "propertyValue" instances}}{{/if}}
+  {{#if lbCookieStickinessPolicy}},"LBCookieStickinessPolicy": {{helper "m:core" "propertyValue" lbCookieStickinessPolicy}}{{/if}}
   {{#if loadBalancerName}},"LoadBalancerName": {{helper "m:core" "propertyValue" loadBalancerName}}{{/if}}
-  {{#if policies}},"Policies": {{policies}}{{/if}}
+  {{#if policies}},"Policies": {{helper "m:core" "propertyValue" policies}}{{/if}}
   {{#if scheme}},"Scheme": {{helper "m:core" "propertyValue" scheme}}{{/if}}
-  {{#if securityGroups}},"SecurityGroups": {{securityGroups}}{{/if}}
-  {{#if subnets}},"Subnets": {{subnets}}{{/if}}
-  {{#if tags}},"Tags": {{tags}}{{/if}}
+  {{#if securityGroups}},"SecurityGroups": {{helper "m:core" "propertyValue" securityGroups}}{{/if}}
+  {{#if subnets}},"Subnets": {{helper "m:core" "propertyValue" subnets}}{{/if}}
+  {{#if tags}},"Tags": {{helper "m:core" "propertyValue" tags}}{{/if}}
 }
 {{/resource}}
