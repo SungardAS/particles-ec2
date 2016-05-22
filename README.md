@@ -85,7 +85,7 @@ are stored in.  Each file represents an AMI name and the file's contents
 is a json map of AWS regions to AMI IDs.
 
 ## Sungard Availability Services | Labs
-[![Sungard Availability Services | Labs][labs-logo]][labs-github-url]
+[![Sungard Availability Services | Labs][labs-image]][labs-github-url]
 
 This project is maintained by the Labs team at [Sungard Availability
 Services](http://sungardas.com)
@@ -94,6 +94,8 @@ GitHub: [https://sungardas.github.io](https://sungardas.github.io)
 
 Blog: [http://blog.sungardas.com/CTOLabs/](http://blog.sungardas.com/CTOLabs/)
 
+[labs-github-url]: https://sungardas.github.io
+[labs-image]: https://raw.githubusercontent.com/SungardAS/repo-assets/master/images/logos/sungardas-labs-logo-small.png
 [condensation-image]: https://raw.githubusercontent.com/SungardAS/condensation/master/docs/images/condensation_logo.png
 [condensation-url]: https://github.com/SungardAS/condensation
 [npm-image]: https://badge.fury.io/js/particles-ec2.svg
