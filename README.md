@@ -19,43 +19,43 @@ Instance AvailabilityZone
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
-#### instance\_id
+#### instance/id
 Instance ID
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
-#### instance\_private\_dns
+#### instance/private\_dns
 Instance Private DNS
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
-#### instance\_private\_ip
+#### instance/private\_ip
 Instance Private IP
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
-#### instance\_public\_dns
+#### instance/public\_dns
 Instance Public DNS
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
-#### instance\_public\_ip
+#### instance/public\_ip
 Instance Public IP
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
-#### security\_group\_id
+#### security/group\_id
 SecurityGroup ID
 
 *Parameters*
   `securityGroupLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
-#### security\_group\_name
+#### security/group\_name
 SecurityGroup Name
 
 *Parameters*
@@ -64,25 +64,12 @@ SecurityGroup Name
 
 ### sets
 
-#### instance\_output\_all
+#### instance/output\_all
 Create all available instance outputs
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
 
-
-#### security\_group\_output\_all
-Create all available security group outputs
-
-*Parameters*
-  `securityGroupLogicalId {String}` logicalId of the AWS::EC2::SecurityGroup resource
-
-### partials
-
-#### amazon-image-regions
-All images owned by `amazon` organized by their name and the region they
-are stored in.  Each file represents an AMI name and the file's contents
-is a json map of AWS regions to AMI IDs.
 
 ## Sungard Availability Services | Labs
 [![Sungard Availability Services | Labs][labs-image]][labs-github-url]
