@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- 5
+- 4
+- 0.12
+matrix:
+  include:
+  - node_js: 6
+    env: DEPLOY=true
+after_success: if [[ $DEPLOY == "true" ]] ; then ./node_modules/.bin/gulp condensation:deploy
+  ; else echo "no deploy" ; fi
+env:
+  global:
+  - secure: fDlIZwS+6cDmdc3Era1H9QCItrIgFtbddm9PI5i2LdO0kCKUkppWLdBP1DVzY1ij0DR7T30yKfFna62De55hx9/BfCeSjHmT23NPKI7xl6LAAfeyYTZdzlt9bSsmcZatUi9zMooTtNGehruuLC1BLfajnG5a5UC/ysXmmANP/J8=
+  - secure: KJHcpy+1JF/nkNBewo+SVud0sj4byayoWwJ+5MWARgN843bRPa/36zkM4fzl1QG5aOuk2Zafgzm32wAxagBMq57ejweUhj3nhToHxRAd7aDsc3j1AG+Er+5cPNloCqtqXd7BY1NzcU+kxYjzyxSVHnemTVEbF3cLqFzi1NXQ2Os=
+deploy:
+  provider: npm
+  email: as.us.labs@sungardas.com
+  api_key:
+    secure: AXT3a+qFoo/GTuo/tC/oJA4jN/zPqdgowv2nEZ0E2KBGamUe090ZpZLEfcYbEDQxpFo8GClxugdSPq8wsriGQiYCWMgmZ1EbY0oa9CU+QGiRB6hCRBMsAR/2fFBmslcIbeA8d4TgbsZrCKNFJOsj1yvt+zBJh5bAabYsD21ULUo=
+  on:
+    tags: true
+    repo: SungardAS/particles-ec2
