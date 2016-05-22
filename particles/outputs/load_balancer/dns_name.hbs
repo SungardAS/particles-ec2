@@ -1,0 +1,4 @@
+{{#output "m:core" "base"}}
+  "Value": {"Fn::GetAtt" : [ "{{loadBalancerLogicalId}}", "DNSName" ]},
+  "Description": "The DNS name for {{instanceLogicalId}}"
+{{/output}}

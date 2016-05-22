@@ -1,24 +1,48 @@
 {
   "name": "particles-ec2",
-  "version": "0.2.11",
-  "description": "[Condensation](https://github.com/SungardAS/condensation) particles for AWS::EC2::* resource types",
-  "main": "index.js",
+  "version": "0.3.0-beta.0",
+  "publishConfig": {
+    "tag": "beta"
+  },
+  "description": "Condensation particles for AWS EC2",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha",
+    "build": "./node_modules/.bin/gulp condensation:build",
+    "clean": "./node_modules/.bin/gulp condensation:clean",
+    "deploy": "./node_modules/.bin/gulp condensation:deploy",
+    "gulp": "./node_modules/.bin/gulp"
   },
   "author": {
     "name": "Kevin McGrath",
     "email": "kevin.mcgrath@sungardas.com"
   },
-  "license": "Apache-2.0",
-  "keywords": ["condensation-particles"],
-  "devDependencies": {
-    "fs-extra": "^0.16.5"
+  "bugs": {
+    "url": "https://github.com/sungardas/particles-ec2/issues"
   },
+  "homepage": "https://github.com/sungardas/particles-ec2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sungardas/particles-ec2.git"
+  },
+  "keywords": [
+    "condensation-particles",
+    "condensation",
+    "cloudformation",
+    "cloud",
+    "formation",
+    "aws",
+    "vpc"
+  ],
+  "license": "Apache-2.0",
   "dependencies": {
-    "async": "^1.4.2",
-    "aws-sdk": "^2.2.5",
-    "json-stable-stringify": "^1.0.0",
-    "lodash": "^3.10.0"
+    "condensation": "^0.5.5",
+    "config": "^1.20.1",
+    "git-rev-sync": "^1.6.0",
+    "gulp": "^3.9.1",
+    "particles-core": "^0.4.3"
+  },
+  "devDependencies": {
+    "condensation-particle-tests": "^0.5.2",
+    "mocha": "^2.4.5"
   }
 }
