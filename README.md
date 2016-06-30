@@ -13,7 +13,7 @@
 
 ### outputs
 
-#### instance\_availability\_zone
+#### instance/availability\_zone
 Instance AvailabilityZone
 
 *Parameters*
@@ -48,19 +48,6 @@ Instance Public IP
 
 *Parameters*
   `instanceLogicalId {String}` logicalId of the AWS::EC2::Instance resource
-
-#### security/group\_id
-SecurityGroup ID
-
-*Parameters*
-  `securityGroupLogicalId {String}` logicalId of the AWS::EC2::Instance resource
-
-#### security/group\_name
-SecurityGroup Name
-
-*Parameters*
-  `securityGroupLogicalId {String}` logicalId of the AWS::EC2::Instance resource
-
 
 ### sets
 
