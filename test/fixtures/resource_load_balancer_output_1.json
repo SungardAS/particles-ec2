@@ -1,0 +1,15 @@
+{
+  "LoadBalancer": {
+    "Properties": {
+      "Listeners": [
+        {
+          "InstancePort": "80",
+          "LoadBalancerPort": "80",
+          "Protocol": "HTTP"
+        }
+      ]
+    },
+    "Type": "AWS::ElasticLoadBalancing::LoadBalancer"
+  }
+}
+

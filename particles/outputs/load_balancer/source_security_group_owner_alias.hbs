@@ -1,0 +1,4 @@
+{{#output "m:core" "base"}}
+  "Value": {"Fn::GetAtt" : [ "{{loadBalancerLogicalId}}", "SourceSecurityGroup.OwnerAlias" ]},
+  "Description": "The owner of the source security group"
+{{/output}}
