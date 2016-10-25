@@ -1,4 +1,4 @@
 {{#output "m:core" "base"}}
-  "Value": {"Fn::GetAtt" : [ "{{loadBalancerLogicalId}}", "CanonicalHostedZoneNameId" ]},
+  "Value": {"Fn::GetAtt" : [ "{{loadBalancerLogicalId}}", "CanonicalHostedZoneNameID" ]},
   "Description": "The ID of the Amazon Route 53 hosted zone name that is associated with {{instanceLogicalId}}"
 {{/output}}
