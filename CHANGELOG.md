@@ -3,6 +3,11 @@ All notable changes to this project will be documented here in
 accordance with [Keep a CHANGELOG][keep-changelog-url].
 This project adheres to [Semantic Versioning][semver-url].
 
+## [0.3.1] - 2016-10-25
+
+### Fixed
+- LoadBalancer CanonicalHostedZoneNameID attribute [issue #3]
+
 ## [0.3.0] - 2016-07-08
 
 ### Changed
