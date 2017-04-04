@@ -33,7 +33,7 @@ module.exports = function ami(opts,cb) {
   ec2.describeImages(opts,function(err,data) {
     if (err) return cb(err);
 
-    var mostRecent = _.last(_.sortBy(data.Images, sortBy));
+    var mostRecent = _.last(_.sortBy(data.Images, sortBy)) || {};
     cb(null,mostRecent.ImageId);
 
   });
