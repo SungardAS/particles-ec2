@@ -1,8 +1,7 @@
 language: node_js
 node_js:
-- 5
+- 7
 - 4
-- 0.12
 matrix:
   include:
   - node_js: 6
