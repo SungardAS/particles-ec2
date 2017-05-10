@@ -3,10 +3,8 @@
   type="AWS::S3::BucketPolicy"
   Bucket=Bucket
   PolicyDocument=(
-    arrayify (
-      partial "elb/logs_policy_statement"
-      bucket=Bucket
-      path=path
-    )
+    partial "elb/logs_policy_statement"
+    bucket=Bucket
+    path=path
   )
 }}
