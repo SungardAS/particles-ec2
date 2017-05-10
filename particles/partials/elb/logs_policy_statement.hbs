@@ -1,0 +1,13 @@
+{
+  "Action": [
+    "s3:PutObject"
+  ],
+  "Effect": "Allow",
+  "Resource": {{fnSub "arn:aws:s3:::${bucket}/${path}" bucket=bucket path=path}},
+  "Principal": {
+    "AWS": [
+      "{{helper "m:ec2" "elb_logs_account"}}"
+    ]
+  }
+}
+
