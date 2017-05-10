@@ -11,7 +11,7 @@ describe("front_loaders", function() {
     };
 
     it("should find the latest amazon ami", function(done) {
-      this.timeout(30000);
+      this.timeout(90000);
 
       ami.call(context,{
         Owners: ["amazon"],
