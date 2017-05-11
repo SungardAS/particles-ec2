@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning][semver-url].
 - ELB Logs Account helper (for IAM permissions)
 - ELB Logs Policy particle
 
+### Removed
+- load\_balancer resource (use m:core "spec" instead)
+
 ## [0.3.1] - 2016-10-25
 
 ### Fixed
