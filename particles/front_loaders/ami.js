@@ -2,7 +2,7 @@ var _ = require("lodash");
 var AWS = require("aws-sdk");
 
 /**
- * Finds the most recently created AMI based on parameters sent to describeImages
+ * Finds the most recent AMI based on parameters sent to describeImages
  * @example
  * ---
  * frontload:

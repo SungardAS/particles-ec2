@@ -11,6 +11,44 @@
 
 ## Particles
 
+### front\_loaders
+
+#### ami
+Finds the most recent AMI based on parameters sent to describeImages
+
+**Example**  
+```
+---
+frontload:
+  amazon_ami:
+    module: particles-ec2
+    loader: ami
+      opts:
+        Owners:
+          - amazon
+        Filters:
+          -
+            Name: name
+            Values: ["amzn-ami-hvm*x86_64-gp2"]
+---
+
+ImageId: {{ami}}
+```
+
+-
+
+### helpers
+
+#### elb\_logs\_account
+Returns the ELB logs account for the deployment region.
+
+See [Enable Access Logs](http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-access-logs.html#attach-bucket-policy)
+
+**Example**  
+```
+{{helper "m:ec2" "elb_logs_account"}}
+```
+
 ### outputs
 
 #### instance/availability\_zone

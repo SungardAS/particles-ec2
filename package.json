@@ -1,6 +1,6 @@
 {
   "name": "particles-ec2",
-  "version": "0.4.0-rc3",
+  "version": "0.4.0",
   "publishConfig": {
     "tag": "rc"
   },
@@ -35,16 +35,16 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "aws-sdk": "^2.7.26",
-    "condensation": "^0.6.5-rc0",
-    "config": "^1.20.1",
-    "git-rev-sync": "^1.6.0",
+    "aws-sdk": "^2.49.0",
+    "condensation": "^0.6.6",
+    "config": "^1.26.1",
+    "git-rev-sync": "^1.9.1",
     "gulp": "^3.9.1",
     "lodash": "^4.17.4",
-    "particles-core": "^0.4.3"
+    "particles-core": "^0.5.3"
   },
   "devDependencies": {
-    "condensation-particle-tests": "^0.5.2",
-    "mocha": "^2.4.5"
+    "condensation-particle-tests": "^0.5.4",
+    "mocha": "^3.3.0"
   }
 }
